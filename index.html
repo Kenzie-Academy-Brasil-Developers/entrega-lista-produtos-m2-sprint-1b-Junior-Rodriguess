@@ -13,14 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script defer src="src/js/dataProdutos.js"></script>
+    <script defer src="./src/js/script.js"></script>
     <title>Lista de Produtos</title>
   </head>
   <body>
-    <!-- CABEÇALHO -->
     <header>
       <h1>Shop now</h1>
     </header>
-    <!-- PARTE PRINCIPAL -->
     <main>
       <section class="filtersContainer">
         <div id="botoesContainer">
@@ -37,7 +37,6 @@
             Laticínios
           </button>
         </div>
-
         <div class="containerBuscaPorNome">
           <input
             type="text"
@@ -60,25 +59,27 @@
       </section>
       <!-- CONTAINER DE PRODUTOS -->
       <section class="containerVitrine">
-        <div class="containerListaProdutos">
-         <ul>
-                    <!-- Utilize esse item html como template para a construção da lista de produtos
-                    
-                    Você pode remover esses comentários depois que fizer a construção pelo DOM -->
-                    
-            
-                    <!-- <li>
-                        <img src="./src/img/maça.png" alt="Imagem maçã">
-                        <h3>Maçã</h3>
-                        <span>Hortifruti</span>
-                        <p>R$ 2.00</p>
-                    </li> -->
-                    
-                </ul>
+        <div id="produtosCard" class="containerListaProdutos">
+          
+          <!-- <li>
+              <img src="./src/img/maça.png" alt="Imagem maçã">
+              <h3>Maçã</h3>
+              <span>Hortifruti</span>
+              <p>R$ 2.00</p>
+          </li> 
+                       -->
+         
         </div>
       </section>
     </main>
-    <script src="src/js/dataProdutos.js"></script>
-    <script src="./scriptDemo.js"></script>
+   
   </body>
 </html>
+
+
+<!-- 1 - 
+  Construindo a Lista de Produtos
+A primeira coisa que precisamos fazer é construir a 
+lista dos produtos na nossa página. Note que, no arquivo index.html
+ do repositório clonado, já temos um modelo HTML para utilizarmos 
+ como base para criarmos os produtos de forma dinâmica, ou seja, através do DOM. -->
