@@ -9,7 +9,7 @@ const produtos = [
     {
         nome: 'Morango',
         preco: 2,
-        secao: 'Hortifruti',
+        secao: 'Hortifruti', 
         categoria: 'fruta',
         img: './src/img/morango.png'
     },

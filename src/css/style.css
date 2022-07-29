@@ -70,6 +70,7 @@ color: #515252;
 font-weight: 400;
 }
 
+
 .estiloGeralBotoes--botaoBuscaPorNome {
 display: flex;
 flex-direction: row;
@@ -81,6 +82,8 @@ background: #12b886;
 border: 1.5px solid #12b886;
 border-radius: 8px;
 }
+
+
 
 /* VALOR TOTAL */
 
