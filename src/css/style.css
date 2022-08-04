@@ -12,13 +12,14 @@ background: #ffffff;
 box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 0.25);
 }
 
-/* MAIN - PARTE PRINCIPAL */
+/* / MAIN - PARTE PRINCIPAL */
 
 main {
 margin: 0 70px;
-}
 
-/* FILTROS */
+} 
+
+/* FILTROS */ 
 
 .filtersContainer {
 display: flex;
@@ -206,3 +207,13 @@ justify-content: space-between;
 padding: 5px;
 }
  
+
+/* @media (min-width: 750px) */
+
+
+
+
+
+
+
+

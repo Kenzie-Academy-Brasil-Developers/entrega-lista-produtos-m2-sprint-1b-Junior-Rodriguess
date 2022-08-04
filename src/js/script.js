@@ -7,6 +7,7 @@ function renderizarCards(lista){
     })
 }
 renderizarCards(produtos)
+
 function itensDoCard(item){
     const li       = document.createElement('li')
     const img      = document.createElement('img')
@@ -16,12 +17,19 @@ function itensDoCard(item){
     const span     = document.createElement('span')
     span.innerText = `${item.secao}`    
     const p        = document.createElement('p')
-    p.innerText    = `${item.preco}`   
-    li.append(img, h3, span, p)
+    p.innerText    = `${item.preco}`
+    const botaoDoCard = document.createElement('button')
+    botaoDoCard.innerText = `Adicionar ao carrinho`
+
+    li.append(img, h3, span, p, botaoDoCard)
     return li
 }
-const btn = document.querySelector(".estiloGeralBotoes--botaoBuscaPorNome")  
-btn.addEventListener("click", barraDePesquisa)
+function criaEventoBarraDePesquisa(){
+    const btn = document.querySelector(".estiloGeralBotoes--botaoBuscaPorNome")  
+    btn.addEventListener("click", barraDePesquisa)
+}
+criaEventoBarraDePesquisa()
+
 function barraDePesquisa(){
     const input = document.querySelector(".campoBuscaPorNome") 
     const inputValor = input.value.trim().toLowerCase()
@@ -35,8 +43,15 @@ function barraDePesquisa(){
       renderizarCards(filtroPesquisa)  
  }
 barraDePesquisa()
-let btnHotifruti = document.getElementsByClassName("estiloGeralBotoes")[1]
-btnHotifruti.addEventListener("click", filtrarHortifrutiBotao)
+
+function criaEventoHortifruti(){
+
+    let btnHotifruti = document.getElementsByClassName("estiloGeralBotoes")[1]
+    btnHotifruti.addEventListener("click", filtrarHortifrutiBotao)
+
+}
+criaEventoHortifruti()
+
 function filtrarHortifrutiBotao(){
     let filtroHortifruti = []
     produtos.filter(function(item){
@@ -46,8 +61,12 @@ function filtrarHortifrutiBotao(){
     })
     renderizarCards(filtroHortifruti)   
 }
-let btnTodosProdutos = document.getElementsByClassName("estiloGeralBotoes")[0]
-btnTodosProdutos.addEventListener("click", filtrarTodosOsProdutos)
+
+function criaEventoTodosProdutos(){
+    let btnTodosProdutos = document.getElementsByClassName("estiloGeralBotoes")[0]
+    btnTodosProdutos.addEventListener("click", filtrarTodosOsProdutos)
+}
+criaEventoTodosProdutos()
 function filtrarTodosOsProdutos(){
     const TodosProdutos = []
     produtos.filter(function(item){
@@ -57,8 +76,12 @@ function filtrarTodosOsProdutos(){
     })
     renderizarCards(TodosProdutos)
 }
-let btnPanificadora = document.getElementsByClassName("estiloGeralBotoes")[2]
-btnPanificadora.addEventListener("click", filtrarPanificadora)
+function criaEventoPanificadora(){
+    let btnPanificadora = document.getElementsByClassName("estiloGeralBotoes")[2]
+    btnPanificadora.addEventListener("click", filtrarPanificadora)
+}
+criaEventoPanificadora()
+
 function filtrarPanificadora(){
     const filtroPanificadora = []
     produtos.filter(function(item){
@@ -68,8 +91,13 @@ function filtrarPanificadora(){
     })
     renderizarCards(filtroPanificadora)
 }
-let btnLaticinios = document.getElementsByClassName("estiloGeralBotoes")[3]
-btnLaticinios.addEventListener("click", filtrarLaticinio)
+
+function criaEventoLaticinios(){
+    let btnLaticinios = document.getElementsByClassName("estiloGeralBotoes")[3]
+    btnLaticinios.addEventListener("click", filtrarLaticinio)
+}
+criaEventoLaticinios()
+
 function filtrarLaticinio(){
     const filtroLaticinio = []
     produtos.filter(function(item){

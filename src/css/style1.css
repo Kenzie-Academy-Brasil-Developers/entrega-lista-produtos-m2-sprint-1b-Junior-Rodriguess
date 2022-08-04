@@ -1,0 +1,230 @@
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 13px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+       
+}
+header h1{
+    font-size: 16px;
+    font-weight: 600px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+   
+
+} 
+.filtersContainer{
+    
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 46px;
+ 
+    
+}
+#botoesContainer {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    overflow-x: scroll;
+
+}
+
+.estiloGeralBotoes{
+
+    width: 100%;
+    height: 52px; 
+    font-size: 16px;
+    font-weight: 500px;
+    color: white;
+    background-color: #12B886;
+    border: none;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+
+.containerBuscaPorNome{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    width: 100%;
+    height: 52px;
+    gap: 18px;
+
+}
+
+.containerBuscaPorNome input{
+    width: 100%;
+    border: none;
+    background-color: #F1F3F5;
+
+
+}
+
+.containerBuscaPorNome input::placeholder{
+    padding: 14px 20px;
+    
+
+}
+
+.containerBuscaPorNome button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 26px;
+    width: 59px;
+    border-radius: 10px;
+    border: none;
+    background-color: #12B886;
+
+}
+
+.containerVitrine {
+   
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.containerListaProdutos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.containerListaProdutos ul {
+
+    display: flex;
+    gap: 25px;
+    overflow-x: scroll;
+}
+
+li img{
+
+    height: 175px;
+    width: 274px;
+    left: 16px;
+    top: 243px;
+    border-radius: 8px;
+   
+}
+
+.containerListaProdutos__nutrientes{
+    display: none;
+
+}
+
+.containerListaProdutos__info{
+
+    display: flex;
+    margin-top: 16px;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.produtos__info{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 16px;
+}
+
+.comprarProduto__button{
+    display: flex;
+    height: 29px;
+    width: 71px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: none;
+    color: #12B886;
+
+}
+
+.carrinho__compras{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.carrinho__title{
+    display: flex;
+    width: 100%;
+    background-color: #12B886;
+    padding: 11px 46px;
+    align-items: center;
+    color: white;
+   
+}
+
+.carrinho__produtos{
+    
+    display: flex;
+    margin-top: 17px;
+    gap: 17px;
+    flex-direction: column;
+}
+
+.carrinho__produtos li {
+    display: flex;
+    gap: 15px;
+}
+
+.carrinho__produtos li img{
+    width: 70px;
+    height: 70px;
+
+}
+.compras{
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+.botao_remover_carrinho{
+
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    border: none;
+
+}
+
+.valores__carrinho{
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 500;
+     
+}
+
+.quantidade__itens{
+    display: flex;
+    font-size: 12px;
+    justify-content:space-between;
+   
+}
+
+.valor__itens{
+    display: flex;
+    justify-content:space-between;
+    font-size: 12px;
+}
