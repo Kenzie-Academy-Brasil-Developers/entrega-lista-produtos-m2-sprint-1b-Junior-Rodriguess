@@ -2,43 +2,34 @@ body {
     font-family: "Poppins", sans-serif;
     padding: 13px;
 }
-
 header {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-       
+    align-items: center;      
 }
-header h1{
+header h1 {
     font-size: 16px;
     font-weight: 600px;
     text-align: center;
 }
-
 main {
     width: 100%;
    
 } 
-.filtersContainer{
-    
+.filtersContainer {
     display: flex;
     width: 100%;
     flex-direction: column;
     margin-top: 46px;
- 
-    
 }
 #botoesContainer {
     display: flex;
     width: 100%;
     gap: 12px;
-    overflow-x: scroll;
-
+    overflow-x: auto;
 }
-
-.estiloGeralBotoes{
+.estiloGeralBotoes {
 
     width: 100%;
     height: 52px; 
@@ -50,33 +41,23 @@ main {
     white-space: nowrap;
     border-radius: 10px;
 }
-
-
-.containerBuscaPorNome{
+.containerBuscaPorNome {
     display: flex;
     margin-top: 15px;
     justify-content: space-between;
     width: 100%;
     height: 52px;
     gap: 18px;
-
 }
-
-.containerBuscaPorNome input{
+.containerBuscaPorNome input {
     width: 100%;
     border: none;
     background-color: #F1F3F5;
-
-
 }
-
-.containerBuscaPorNome input::placeholder{
+.containerBuscaPorNome input::placeholder {
     padding: 14px 20px;
-    
-
 }
-
-.containerBuscaPorNome button{
+.containerBuscaPorNome button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,282 +66,211 @@ main {
     border-radius: 10px;
     border: none;
     background-color: #12B886;
-
 }
-
-.containerVitrine {
-   
+.containerVitrine { 
     width: 100%;
     margin-top: 20px;
-
 }
-
-.containerListaProdutos{
+.containerListaProdutos {
     display: flex;
     flex-direction: column;
-
 }
-
 .containerListaProdutos ul {
-
     display: flex;
     gap: 25px;
-    overflow-y: scroll;
-
-    
+    overflow-y: auto;
 }
-
-li img{
-
+li img {
     height: 175px;
     width: 274px;
     left: 16px;
     top: 243px;
     border-radius: 8px;
-   
-   
 }
-
-.containerListaProdutos__nutrientes{
+.containerListaProdutos__nutrientes {
     display: none;
-
 }
-
-.containerListaProdutos__info{
-
+.containerListaProdutos__info {
     display: flex;
     margin-top: 16px;
     align-content: space-between;
     justify-content: space-between;
     align-items: flex-end;
-
 }
-
-.produtos__info{
+.produtos__info {
     display: flex;
     flex-direction: column;
     align-content: space-between;
     gap: 16px;
 }
-
-.comprarProduto__button{
-    display: flex;
-    height: 29px;
-    width: 71px;
-    padding: 7px 10px;
+.containerListaProdutos ul li button {
+    background-color: #12b8860d;
     border-radius: 8px;
-    border: none;
-    color: #12B886;
-
+    border: #12b8860d 1px solid;
+    color: #12b886;
+    padding: 5px;
+    transition: 0.5s;
 }
-
-.carrinho__compras{
+.containerListaProdutos ul li h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px 0 15px;
+    color: #212529;
+}
+.containerListaProdutos ul li p {
+    font-size: 0.7rem;
+    color: #868e96;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.containerListaProdutos ul li span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+    color: #212529;  
+}
+.containerListaProdutos ul li ol {
+    list-style: decimal;
+    color: #868e96;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.carrinho__compras {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-
-.carrinho__title{
+.carrinho__title {
     display: flex;
     width: 100%;
     background-color: #12B886;
     padding: 11px 46px;
     align-items: center;
     color: white;
-   
 }
-
-.carrinho__produtos{
-    
+.carrinho__produtos {
     display: flex;
     margin-top: 17px;
     gap: 17px;
     flex-direction: column;
 }
-
 .carrinho__produtos li {
     display: flex;
     gap: 15px;
 }
-
-.carrinho__produtos li img{
+.carrinho__produtos li img {
     width: 70px;
     height: 70px;
-
 }
-.compras{
-
+.compras {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
-    
-
-}
-
-.botao_remover_carrinho{
-
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    border: none;
-
-}
-
-.valores__carrinho{
+}  
+.valores__carrinho {
     display: flex;
     flex-direction: column;
     margin-top: 34px;
     gap: 20px;
     font-size: 12px;
     font-weight: 500;
-     
 }
-
-.quantidade__itens{
+.quantidade__itens {
     display: flex;
     font-size: 12px;
     justify-content:space-between;
-   
 }
-
-.valor__itens{
+.valor__itens {
     display: flex;
     justify-content:space-between;
     font-size: 12px;
 }
-
-@media only screen and (min-width: 769px){
+.removerProduto {
+    max-width: 100%;
+    height: 20px;
+    border: none;
+    color: white;               
+    background-color: #12B886;
+}
+@media only screen and (min-width: 769px) {
 
     .filtersContainer {
-
         flex-direction: row;
         justify-content: space-between;
         padding: 5px 15px;
         align-items: center;
         gap: 5px;
-        
-        
-    }
-
+    } 
     .containerListaProdutos ul {
-        overflow-x: hidden;
-    }
-   
-    .estiloGeralBotoes{
+    overflow-x: hidden;
+    } 
+    .estiloGeralBotoes {
         width: 20%;
         cursor: pointer;
-       
     }
-
-    .containerBuscaPorNome{
-        
+    .containerBuscaPorNome {   
         display: flex;
         justify-content: space-between;
         padding-left: 20px;
-       background-color: aqua;
+        background-color: aqua;
     }
-
-    
-    .containerBuscaPorNome{
+    .containerBuscaPorNome {
         width: 30%;
         border: none;
-        background-color: #F1F3F5;
-       
-        
+        background-color: #F1F3F5; 
     }
-    
     .containerBuscaPorNome input {
-        width: 70%;
-       
-     }
+        width: 70%;  
+    }
     .containerBuscaPorNome input::placeholder {
         font-size: 15px;
-
-        
     }
-
-    .priceContainer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #FFFFFF;
-        border: 1px solid #FFFFFF;
-        box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
-        border-radius: 8px;
-        padding: 10px 20px;
-    } 
-
-    .priceContainer div {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .priceContainer div img {
-        width: 2rem;
-    } 
-
-    .priceContainer span {
-        background-color: #212529;
-        border-radius: 4px;
-        color: #fff;
-        padding: 10px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-    } 
-
-
-
     .containerVitrine {
-
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
-        border-radius: 50px 0;
-        }
-        
-    
-
+        margin-top: 20px;
+        justify-content: space-between;
+    }
     .containerListaProdutos ul {
+        min-width: 90%;
+        gap: 25px;
+        overflow-y: auto;
+        flex-wrap: wrap;   
+    } 
+    .containerListaProdutos__info {
         display: flex;
-        list-style: none;
-        flex-wrap: wrap;
+        margin-top: 16px;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: antiquewhite;
+    }
+    .containerListaProdutos ul {
         justify-content: flex-start;
-        gap: 100px;
-        margin-left: 40px;
+        gap: 25px;
+        margin-left: 30px;
         width: 90%;
-
-    
-
     }
     .containerListaProdutos ul li {
         border-radius: 8px;
         transition: ease-in-out 0.1s;
-        width: calc(95% / 4);
         margin-bottom: 10px;
-
-        
-    }  
+    }
     .containerListaProdutos ul li:hover {
-    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
-  
+        box-shadow: 3px 3px 13px 1px rgb(146 146 146);
     } 
-    
-     .containerListaProdutos ul li img {
+    .containerListaProdutos ul li img {
         width: 100%;
-    
     } 
-    
     .containerListaProdutos ul li h3 {
         font-size: 1rem;
         font-weight: 500;
         margin: 10px 0 15px;
-        color: #212529;
-        }
-        
+        color: #212529; 
+    }
     .containerListaProdutos ul li p {
         font-size: 0.7rem;
         color: #868e96;
@@ -373,20 +283,12 @@ li img{
         margin-top: 10px;
         display: inline-block;
         color: #212529;
-        
     }
     .containerListaProdutos ul li ol {
         list-style: decimal;
         color: #868e96;
         font-size: 12px;
-        margin-left: 15px;
-       
-    }
-    .containerListaProdutos ul li ol li {
-        margin: 0;
-        width: 100%;
-
-       
+        margin-left: 15px;    
     }
     .containerListaProdutos ul li button {
         background-color: #12b8860d;
@@ -402,67 +304,27 @@ li img{
         color: white;
         cursor: pointer;
     }
-    .containerListaProdutos ul li div {
-        display: flex;
+    .carrinho__produtos li {
+        gap: 5px;
         justify-content: space-between;
-        padding: 5px;
-    } 
-
-    .carrinho__compras{
-        width: 35%;
-        display: flex;
-        flex-direction: column;  
-         
     }
-
-    .carrinho__title{
-        display: flex;
-        width: 100%;
-        background-color: #12B886;
-        padding: 10px 46px;
-        align-items: center;
-        color: white;
+    .carrinho__compras {
+         display: flex;
+        max-width: 26%;
         
     }
-
-    .carrinho__produtos{
-    
-        display: flex;
-        margin-top: 17px;
-        gap: 17px;
-        flex-direction: column;
-        
-    }
-     
-    .botao_remover_carrinho{
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
+    .removerProduto {
+        max-width: 100%;
+        height: 20px;
         border: none;
-    
+        color: white;               
+        background-color: #12B886;
     }
+}   
+    
+    
+    
+   
+  
 
-    .valores__carrinho{
-        display: flex;
-        flex-direction: column;
-        margin-top: 34px;
-        gap: 20px;
-        font-size: 12px;
-        font-weight: 500;
-      
-         
-    }
-    
-    .quantidade__itens{
-        display: flex;
-        font-size: 12px;
-        justify-content:space-between;
-       
-    }
-    
-    .valor__itens{
-        display: flex;
-        justify-content:space-between;
-        font-size: 12px;
-    }
-}
+   

@@ -13,7 +13,8 @@ const produtos = [
         'Vitamina B6',
         'Vitamina C',
         'Folatos'
-      ]
+      ],
+      quantidade: 1
     },
     {
       id: 2,
@@ -29,7 +30,8 @@ const produtos = [
         'Vitamina C',
         'Cálcio',
         'Ferro'
-      ]
+      ],
+      quantidade: 1
     },
     {
       id: 3,
@@ -45,7 +47,8 @@ const produtos = [
         'Vitamina A',
         'Vitamina E',
         'Vitamina C'
-      ]
+      ],
+      quantidade: 1
     },
     {
       id: 4,
@@ -61,7 +64,8 @@ const produtos = [
         'Sódio',
         'Fibra Alimentar',
         'Proteínas'
-      ]
+      ],
+      quantidade: 1
     },
     {
       id: 5,
@@ -75,7 +79,9 @@ const produtos = [
       componentes: [
         'Carboidratos',
         'Proteínas',
-        'Gorduras totais'
-      ]
+        'Gorduras totais',
+        'Cálcio'
+      ],
+      quantidade: 1
     },
   ]
